@@ -1,0 +1,23 @@
+{% if latest_pergunta_list%}
+   <ul>
+   {% for pergunta in latest_pergunta_list %}
+      <li><a href="{% url 'pesquisas:detalhe' pergunta.id %}">{{pergunta.pergunta_texto}}</a></li>
+   {% endfor %}
+   </ul>   
+{% else %}
+   <p>Nenhuma enquete está disponível</p>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
